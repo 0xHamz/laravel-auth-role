@@ -9,7 +9,7 @@ use App\Http\Controllers\Admin\AdminRequestController;
 use App\Http\Controllers\Customer\CustomerVideoController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::get('/login', [AuthController::class, 'loginForm'])->name('login');
